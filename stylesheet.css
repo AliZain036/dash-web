@@ -1,0 +1,87 @@
+*,
+html,
+body,
+p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+.hero-section {
+  height: 80vh;
+  background-image: url(./assets/Images/iphone5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-info {
+  color: #686868;
+  font-weight: bold;
+  text-align: right;
+  font-family: Poppins SemiBold;
+}
+
+.features-section > div > div {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.features-section div div h3 {
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.find-out-more {
+  color: #e78a02;
+}
+
+.book-free-demo-section {
+  border-radius: 20px;
+}
+
+/* .tinted-image {
+  width: 460px;
+  height: 300px;
+} */
+
+.book-demo-image-section {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 255, 0, 2.5),
+      rgba(0, 255, 0, 0) 90%,
+      transparent 50%
+    ),
+    url('./assets/Images/macbook_air_mockup.jpg');
+  background-position: right;
+  /* background-size: 400px; */
+  background-repeat: no-repeat;
+}
+
+.primary-button {
+  border: 3px solid #e78a02;
+  background-color: #e78a02;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 24px;
+  border-radius: 20px;
+}
+
+.screenshots-section {
+  background-color: #eaeaec;
+  padding-bottom: 6rem;
+}
+
+.screenshots-section img {
+  border-radius: 20px;
+}
+
+.footer > div {
+  padding-top: 5rem;
+}
