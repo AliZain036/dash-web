@@ -14,7 +14,7 @@ img {
 
 .hero-section,
 .hero-section-benefits {
-  height: 57vh;
+  height: 100vh;
   background-image: url(./assets/Images/iphone5.jpg);
   background-position: center;
   background-size: cover;
@@ -52,7 +52,8 @@ ul li {
   font-size: 29px;
 }
 
-.contact-info, .contact-info a {
+.contact-info,
+.contact-info a {
   color: #686868;
   font-weight: bold;
   text-align: right;
@@ -72,7 +73,6 @@ ul li {
 .features-section > div > div > div:nth-child(2) {
   /* margin-top: 2rem; */
 }
-
 
 .features-section div div h3 {
   font-weight: bold;
@@ -237,4 +237,24 @@ ul li button {
 
 .text-section {
   color: #fff;
+}
+
+@media screen and (max-width: 1006px) {
+  ul li {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 50px) {
+  .hero-section,
+  .hero-section-benefits {
+    height: 100vh;
+  }
+  
+  .hero-section-card {
+    display: none !important;
+  }
+}
+
+ul {
+  flex-wrap: wrap;
 }
