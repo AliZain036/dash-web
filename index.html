@@ -17,14 +17,17 @@
     />
     <link rel="stylesheet" href="stylesheet.css" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>Dash</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div>
       <div class="hero-section">
         <div class="row m-0 pt-3">
           <div class="col-3">
@@ -39,26 +42,72 @@
                 class="list-unstyled d-flex justify-content-end gap-5 align-items-center m-0"
               >
                 <li class="mx-1">
-                  <p>Features</p>
+                  <a
+                    href="./index.html"
+                    class="text-decoration-none text-black"
+                  >
+                    <p>Features</p>
+                  </a>
                 </li>
                 <li class="mx-1">
-                  <p>Pricing</p>
+                  <a
+                    href="./pricing.html"
+                    class="text-black text-decoration-none"
+                  >
+                    <p>Pricing</p>
+                  </a>
                 </li>
                 <li class="mx-1">
-                  <p>Benefits</p>
+                  <a
+                    href="./benefits.html"
+                    class="text-decoration-none text-black"
+                  >
+                    <p>Benefits</p>
+                  </a>
                 </li>
                 <li class="mx-1">
                   <p>How it works</p>
                 </li>
                 <li class="mx-1">
-                  <p>Contact</p>
+                  <a href="#contact-us" class="text-black text-decoration-none">
+                    <p>Contact</p>
+                  </a>
                 </li>
                 <li class="mx-1">
-                  <button class="primary-button">FREE Demo</button>
+                  <a href="#book-free-demo" class="text-black text-decoration-none">
+                    <button class="primary-button">FREE Demo</button>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+        <div class="hero-section-card">
+          <h1>Facilities Management Software</h1>
+          <div
+            class="h-100 d-flex justify-content-between align-items-center my-3"
+          >
+            <img
+              src="./assets/Images/app-store-badge.png"
+              alt=""
+              width="105px"
+            />
+            <img
+              src="./assets/Images/google-play-badge.png"
+              alt=""
+              width="115px"
+            />
+          </div>
+          <p>
+            Whether you are a multi property owner or an FM Contractor, Dash is
+            the work site management software system that no FM provider should
+            be without.
+          </p>
+          <p class="mt-2">
+            Never let paperwork get on top of you again. DASH helps you get paid
+            faster, with all your jobs in one dashboard.
+          </p>
+          <button class="primary-button mt-3">Sign up today</button>
         </div>
       </div>
       <div class="row features-section g-4 py-5 m-0">
@@ -144,8 +193,41 @@
           </div>
         </div>
       </div>
+      <div style="padding-bottom: 4rem;" id="book-free-demo">
+        <div class="book-free-demo-section row m-0 g-0 px-3">
+          <div class="col-6">
+            <div
+              class="h-100 d-flex align-items-center flex-wrap"
+              style="
+                background-color: #676868;
+                padding: 2rem 0 2rem 3rem;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+              "
+            >
+              <div class="text-section">
+                <h1 class="text-white">FREE DEMO</h1>
+                <h2 class="text-white" style="font-weight: 300;">
+                  We will provide a live demonstration with one of our Dash
+                  engineers.
+                </h2>
+              </div>
+              <button class="primary-button">Book a FREE Demo</button>
+            </div>
+          </div>
+          <div class="col-6">
+            <div
+              class="book-demo-image-section h-100"
+              style="
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
       <div class="screenshots-section text-center">
-        <h1 class="py-4">Screenshots</h1>
+        <h1 class="py-5">Screenshots</h1>
         <div class="row m-0">
           <div class="col-12 col-sm-6 col-md-4">
             <img
@@ -173,7 +255,7 @@
           </div>
         </div>
       </div>
-      <div class="footer container pb-3">
+      <div class="footer container pb-3" id="contact-us">
         <div class="row">
           <div class="col-12 col-sm-6">
             <div class="footer-left">
@@ -200,35 +282,38 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6"></div>
+          <div class="col-12 col-sm-6">
+            <div class="h-100 d-flex justify-content-end align-items-end gap-2">
+              <img
+                src="./assets/Images/app-store-badge.png"
+                alt=""
+                width="101px"
+              />
+              <img
+                src="./assets/Images/google-play-badge.png"
+                alt=""
+                width="115px"
+              />
+            </div>
+          </div>
         </div>
-        <hr />
+        <hr class="footer-hr" />
         <div
           class="d-flex align-content-center justify-content-between flex-wrap pt-2"
         >
           <div>
             <p>Privacy Policy | Terms Policy | FAQs</p>
           </div>
-          <div>
-            <i class="fs fa-user"></i>
+          <div class="d-flex gap-2 social-icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-google-plus"></i>
+            <i class="fa-brands fa-instagram"></i>
           </div>
         </div>
-        <hr />
+        <hr class="footer-hr" />
       </div>
-      <!-- <div class="book-free-demo-section row m-0">
-        <div class="col-6">
-          <div class="text-section" style="background-color: #676868;">
-            <h1>FREE DEMO</h1>
-            <h2>
-              We will provide a live demonstration with one of our Dash
-              engineers.
-            </h2>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="book-demo-image-section h-100"></div>
-        </div>
-      </div> -->
       <!-- <div class="tinted-image"></div> -->
     </div>
 
