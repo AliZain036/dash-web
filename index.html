@@ -23,33 +23,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?Poppins:wght@400;600&display=swap"
       rel="stylesheet"
-      href="https://fonts.google.com/specimen/Poppins?query=poppins"
     />
 
     <title>Dash</title>
   </head>
   <body>
     <div>
-      <div class="hero-section">
+      <div class="hero-section pb-5">
         <div class="row m-0 pt-3">
           <div class="col-3">
             <img src="./assets/icons/logo.png" alt="" />
           </div>
           <div class="col-9">
-            <p class="text-right contact-info">
-              01234 567 890 hello@dashsoftware.co.uk
+            <p class="text-right contact-info d-none d-md-block mb-4">
+              01234 567 890 &nbsp; &nbsp; hello@dashsoftware.co.uk
             </p>
-            <div class="mt-4">
+            <div class="mt-0 mt-md-">
               <ul
-                class="list-unstyled d-flex justify-content-end gap-5 align-items-center m-0"
+                class="list-unstyled d-md-flex justify-content-end gap-md-3 gap-0 align-items-center m-0 d-none gap-lg-4 gap-xxl-5"
               >
                 <li class="mx-1">
-                  <a
-                    href="./index.html"
-                    class="text-decoration-none text-black"
-                  >
+                  <a href="#features" class="text-decoration-none text-black">
                     <p>Features</p>
                   </a>
                 </li>
@@ -70,7 +69,9 @@
                   </a>
                 </li>
                 <li class="mx-1">
-                  <p>How it works</p>
+                  <a href="#features" class="text-black text-decoration-none">
+                    <p>How it works</p>
+                  </a>
                 </li>
                 <li class="mx-1">
                   <a href="#contact-us" class="text-black text-decoration-none">
@@ -86,10 +87,38 @@
                   </a>
                 </li>
               </ul>
+              <div>
+                <div class="text-end">
+                  <a
+                    href="javascript:void(0);"
+                    class="icon fs-1 text-black text-end d-md-none"
+                    onclick="toggleHamburgerMenu()"
+                  >
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+                <div class="topnav d-block d-md-none text-center">
+                  <div id="myLinks">
+                    <a href="#features">Features</a>
+                    <a href="./pricing.html">Pricing</a>
+                    <a href="./benefits.html">Benefits</a>
+                    <a href="#features">How it works</a>
+                    <a href="#contact-us">Contact</a>
+                    <a
+                      href="#book-free-demo"
+                      class="text-black text-decoration-none"
+                    >
+                      <button class="primary-button">FREE Demo</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- <div class="col-12"> -->
+          <!-- </div> -->
         </div>
-        <div class="hero-section-card d-none d-md-block">
+        <div class="hero-section-card">
           <h1>Facilities Management Software</h1>
           <div
             class="h-100 d-flex justify-content-between align-items-center my-3"
@@ -113,11 +142,11 @@
           <p class="mt-2">
             Never let paperwork get on top of you again. DASH helps you get paid
             faster, with all your jobs in one dashboard.
-           </p>
+          </p>
           <button class="primary-button mt-3">Sign up today</button>
         </div>
       </div>
-      <div class="row features-section g-5 py-5 m-0">
+      <div class="row features-section g-5 py-5 m-0" id="features">
         <div class="col-12 col-sm-6 col-md-4 text-center">
           <div>
             <img src="./assets/Images/Icons/Features_Icon.png" alt="" />
@@ -129,9 +158,14 @@
               </p>
               <br />
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-1 mt-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-1 mt-3"
+            >
               <p class="find-out-more">Find out more</p>
-              <i class="fa-solid fa-angle-right" style="color: #e78a02; font-size: .8rem; margin-top: 3px;"></i>
+              <i
+                class="fa-solid fa-angle-right"
+                style="color: #e78a02; font-size: 0.8rem; margin-top: 3px;"
+              ></i>
             </div>
           </div>
         </div>
@@ -145,9 +179,14 @@
                 Dash, 'per-user' pricing. Click here to learn more.
               </p>
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-1 mt-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-1 mt-3"
+            >
               <p class="find-out-more">Find out more</p>
-              <i class="fa-solid fa-angle-right" style="color: #e78a02; font-size: .8rem; margin-top: 3px;"></i>
+              <i
+                class="fa-solid fa-angle-right"
+                style="color: #e78a02; font-size: 0.8rem; margin-top: 3px;"
+              ></i>
             </div>
           </div>
         </div>
@@ -162,9 +201,14 @@
                 more.
               </p>
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-1 mt-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-1 mt-3"
+            >
               <p class="find-out-more">Find out more</p>
-              <i class="fa-solid fa-angle-right" style="color: #e78a02; font-size: .8rem; margin-top: 3px;"></i>
+              <i
+                class="fa-solid fa-angle-right"
+                style="color: #e78a02; font-size: 0.8rem; margin-top: 3px;"
+              ></i>
             </div>
           </div>
         </div>
@@ -178,9 +222,14 @@
                 one simple, easy platform, managing everything in one place!
               </p>
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-1 mt-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-1 mt-3"
+            >
               <p class="find-out-more">Find out more</p>
-              <i class="fa-solid fa-angle-right" style="color: #e78a02; font-size: .8rem; margin-top: 3px;"></i>
+              <i
+                class="fa-solid fa-angle-right"
+                style="color: #e78a02; font-size: 0.8rem; margin-top: 3px;"
+              ></i>
             </div>
           </div>
         </div>
@@ -194,9 +243,14 @@
                 could save with Dash.
               </p>
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-1 mt-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-1 mt-3"
+            >
               <p class="find-out-more">Find out more</p>
-              <i class="fa-solid fa-angle-right" style="color: #e78a02; font-size: .8rem; margin-top: 3px;"></i>
+              <i
+                class="fa-solid fa-angle-right"
+                style="color: #e78a02; font-size: 0.8rem; margin-top: 3px;"
+              ></i>
             </div>
           </div>
         </div>
@@ -210,9 +264,14 @@
                 try Dash.
               </p>
             </div>
-            <div class="d-flex justify-content-center align-items-center gap-1 mt-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-1 mt-3"
+            >
               <p class="find-out-more">Find out more</p>
-              <i class="fa-solid fa-angle-right" style="color: #e78a02; font-size: .8rem; margin-top: 3px;"></i>
+              <i
+                class="fa-solid fa-angle-right"
+                style="color: #e78a02; font-size: 0.8rem; margin-top: 3px;"
+              ></i>
             </div>
           </div>
         </div>
@@ -358,5 +417,15 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggleHamburgerMenu() {
+        var ref = document.getElementById('myLinks')
+        if (ref.style.display === 'block') {
+          ref.style.display = 'none'
+        } else {
+          ref.style.display = 'block'
+        }
+      }
+    </script>
   </body>
 </html>

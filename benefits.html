@@ -38,41 +38,91 @@
             <img src="./assets/icons/logo.png" alt="" />
           </div>
           <div class="col-9">
-            <p class="text-right contact-info">
-              01234 567 890 &nbsp; hello@dashsoftware.co.uk
+            <p class="text-right contact-info d-none d-md-block mb-4">
+              01234 567 890 &nbsp;
+              <a href="mailto:hello@dashsoftware.co.uk">
+                hello@dashsoftware.co.uk
+              </a>
             </p>
-            <div class="mt-4">
+            <div class="mt-0 mt-md-4">
               <ul
-                class="list-unstyled d-flex justify-content-end gap-5 align-items-center m-0"
+                class="list-unstyled d-md-flex justify-content-end gap-md-3 gap-0 align-items-center m-0 d-none gap-lg-4 gap-xxl-5"
               >
                 <li class="m-0 mx-md-1">
-                  <a href="./index.html" class="text-decoration-none text-black">
+                  <a
+                    href="./index.html"
+                    class="text-decoration-none text-black"
+                  >
                     <p>Features</p>
                   </a>
                 </li>
                 <li class="m-0 mx-md-1">
-                  <a href="./pricing.html" class="text-decoration-none text-black">
+                  <a
+                    href="./pricing.html"
+                    class="text-decoration-none text-black"
+                  >
                     <p>Pricing</p>
                   </a>
                 </li>
                 <li class="m-0 mx-md-1">
-                  <p>Benefits</p>
+                  <a
+                    href="#benefits"
+                    class="text-decoration-none text-black"
+                  >
+                    <p>Benefits</p>
+                  </a>
                 </li>
                 <li class="m-0 mx-md-1">
                   <p>How it works</p>
                 </li>
                 <li class="m-0 mx-md-1">
+                  <a
+                    href="#contact-us"
+                    class="text-decoration-none text-black"
+                  >
                   <p>Contact</p>
+                  </a>
                 </li>
                 <li class="m-0 mx-md-1">
+                  <a
+                    href="#contact-us"
+                    class="text-decoration-none text-black"
+                  >
                   <button class="primary-button">FREE Demo</button>
+                  </a>
                 </li>
               </ul>
+              <div>
+                <div class="text-end">
+                  <a
+                    href="javascript:void(0);"
+                    class="icon fs-1 text-black text-end d-md-none"
+                    onclick="toggleHamburgerMenu()"
+                  >
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+                <div class="topnav d-block d-md-none text-center">
+                  <div id="myLinks">
+                    <a href="./index.html">Features</a>
+                    <a href="./pricing.html">Pricing</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="./index.html">How it works</a>
+                    <a href="#contact-us">Contact</a>
+                    <a
+                      href="#contact-us"
+                      class="text-black text-decoration-none"
+                    >
+                      <button class="primary-button">FREE Demo</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row g-4 py-5 m-auto text-center container">
+      <div class="row g-4 py-5 m-auto text-center container" id="benefits">
         <h3 class="benefits-heading">Benefits</h3>
         <p class="mt-3">
           Lower your costs, reduce wasted time and make facilities management
@@ -118,11 +168,54 @@
       <div class="savings-calculator py-5">
         <h1 class="text-white">
           To see how much you can save, try our
-          <span class="text-decoration-underline text-white" style="text-underline-offset: .5rem;">Savings Calculator</span>
+          <span
+            class="text-decoration-underline text-white"
+            style="text-underline-offset: 0.5rem;"
+          >
+            Savings Calculator
+          </span>
         </h1>
-        <img src="./assets/Images/Icons/SavingsCalc_IconWhite.png" alt="" height="95px">
+        <img
+          src="./assets/Images/Icons/SavingsCalc_IconWhite.png"
+          alt=""
+          height="95px"
+        />
       </div>
-      <div class="footer container pb-3">
+      <div style="padding-top: 4rem;" id="book-free-demo">
+        <div class="book-free-demo-section row m-0 g-0 px-3">
+          <div class="col-6">
+            <div
+              class="h-100 d-flex align-items-center flex-wrap"
+              style="
+                background-color: #676868;
+                padding: 2rem 0 2rem 3rem;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+              "
+            >
+              <div class="text-section">
+                <h1 style="color: #e7e7e7;">FREE DEMO</h1>
+                <h2 style="color: #e7e7e7;" style="font-weight: 300;">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam
+                </h2>
+              </div>
+              <button class="primary-button">Book a FREE Demo</button>
+            </div>
+          </div>
+          <div class="col-6">
+            <div
+              class="book-demo-image-section h-100"
+              style="
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer container pb-3" id="contact-us">
         <div class="row">
           <div class="col-12 col-sm-6">
             <div class="footer-left">
@@ -169,7 +262,9 @@
           class="d-flex align-content-center justify-content-between flex-wrap py-3"
         >
           <div>
-            <p>Privacy Policy &nbsp; | &nbsp; Terms Policy &nbsp; | &nbsp; FAQs</p>
+            <p>
+              Privacy Policy &nbsp; | &nbsp; Terms Policy &nbsp; | &nbsp; FAQs
+            </p>
           </div>
           <div class="d-flex gap-2 social-icons">
             <i class="fa-brands fa-linkedin"></i>
@@ -215,5 +310,15 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggleHamburgerMenu() {
+        var ref = document.getElementById('myLinks')
+        if (ref.style.display === 'block') {
+          ref.style.display = 'none'
+        } else {
+          ref.style.display = 'block'
+        }
+      }
+    </script>
   </body>
 </html>
