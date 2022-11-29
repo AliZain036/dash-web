@@ -19,7 +19,7 @@ img {
 }
 
 .hero-section,
-.hero-section-benefits {
+.hero-section-benefits, .features-hero-section {
   /* height: 100vh; */
   background-image: linear-gradient(
       to top,
@@ -38,7 +38,7 @@ ul li {
   font-size: 26px;
 }
 
-.hero-section-benefits {
+.hero-section-benefits, .features-hero-section {
   /* background-image: url(./assets/Images/macbook_air_mockup.jpg); */
   background-image: linear-gradient(
       to bottom,
@@ -403,9 +403,3 @@ ul {
     margin-top: 3.7rem !important;
   }
 }
-
-/* @media screen and (min-width: 992px) and (max-width: 1200px) {
-  #client-card-button, #contractor-signup-btn {
-    margin-top: 3.7rem !important;
-  }
-} */
