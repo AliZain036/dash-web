@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;600&display=swap');
+
 *,
 html,
 body,
@@ -19,7 +21,13 @@ img {
 .hero-section,
 .hero-section-benefits {
   /* height: 100vh; */
-  background-image: url(./assets/Images/iphone5.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgb(0 0 0),
+      rgba(222, 227, 222, 0) 60%,
+      transparent 50%
+    ),
+    url(./assets/Images/iphone5.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,7 +47,8 @@ ul li {
       transparent 50%
     ),
     url(./assets/Images/macbook_air_mockup.jpg);
-    height: 72vh;
+    height: 50vh;
+    background-position: inherit;
 }
 
 .hero-section-card {
@@ -49,21 +58,27 @@ ul li {
   text-align: center;
   /* position: absolute; */
   /* right: 3%; */
-  width: 355px;
-  /* bottom: 7%; */
+  width: 378px;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: 3rem;
 }
 
 .hero-section-card h1 {
   font-size: 29px;
+  color: #010000;
+}
+
+.hero-section-card h1 {
+  color: #010000;
 }
 
 .contact-info,
 .contact-info a {
-  color: #686868;
+  color: #636363;
   font-weight: bold;
   text-align: right;
+  font-size: 20px;
   text-decoration: none;
   /* font-family: Poppins SemiBold; */
 }
@@ -90,6 +105,7 @@ ul li {
 .find-out-more {
   color: #e78a02;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .book-free-demo-section {
@@ -105,7 +121,7 @@ ul li {
       transparent 50%
     ),
     url('./assets/Images/macbook_air_mockup.jpg');
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -114,7 +130,7 @@ ul li {
   border: 3px solid #e78a02;
   background-color: #e78a02;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0 24px;
   border-radius: 20px;
 }
@@ -128,6 +144,11 @@ ul li button {
   padding-bottom: 6rem;
 }
 
+.screenshots-section h1 {
+  font-size: 41px;
+  font-weight: 600;
+}
+
 .screenshots-section img {
   border-radius: 20px;
 }
@@ -136,8 +157,13 @@ ul li button {
   padding-top: 5rem;
 }
 
+.footer p {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .social-icons i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .footer-hr {
@@ -147,9 +173,15 @@ ul li button {
   background-color: #bdce00;
 }
 
+#benefits p {
+  font-size: 17px;
+}
+
 .benefits-heading {
   font-size: 29px;
   color: #010000;
+  font-family: 'Poppins SemiBold', sans-serif;
+  font-weight: 600;
 }
 
 .savings-calculator {
@@ -172,8 +204,15 @@ ul li button {
   color: #000;
   /* font-family: Poppins SemiBold; */
   font-weight: 600;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.popular-pricing-label {
+  font-size: 21px;
+  font-weight: 300;
+  box-shadow: rgb(0 0 0 / 15%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
 }
 
 .pricing-plans .price {
@@ -181,6 +220,7 @@ ul li button {
   font-size: 37px;
   margin-bottom: 1.5rem;
   line-height: 21px;
+  font-family: 'Poppins SemiBold', sans-serif;
 }
 
 .pricing-plans .price:nth-child(2) {
@@ -195,7 +235,7 @@ ul li button {
 
 .pricing-plans .description {
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   /* margin: 2rem 0; */
 }
 
@@ -218,10 +258,12 @@ ul li button {
 .feature-list > div p {
   text-align: left;
   line-height: initial;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .most-popular-plan-card {
-  border: 3px solid #bdce00;
+  border: 5px solid #bdce00;
 }
 
 .most-popular-label {
@@ -234,7 +276,7 @@ ul li button {
 .most-popular-label p {
   display: inline-block;
   background-color: #bdce00;
-  padding: 0 0.8rem;
+  padding: 1px 1rem;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
 }
@@ -257,9 +299,9 @@ ul li button {
   }
 }
 
-@media screen and (min-width: 1153px) {
+@media screen and (min-width: 1165px) {
   ul li {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   ul li button {
@@ -339,3 +381,31 @@ ul {
   background-color: #04aa6d;
   color: white;
 }
+
+@media screen and (min-width: 1200px) {
+  #client-card-button, #trading-card-button {
+    margin-top: .3rem !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #client-card-button, #trading-card-button {
+    margin-top: .5rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #client-card-button, #trading-card-button {
+    margin-top: 4rem !important;
+  }
+
+  #enterprise-signup-btn, #contractor-signup-btn {
+    margin-top: 3.7rem !important;
+  }
+}
+
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
+  #client-card-button, #contractor-signup-btn {
+    margin-top: 3.7rem !important;
+  }
+} */

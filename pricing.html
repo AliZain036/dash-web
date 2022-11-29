@@ -39,7 +39,7 @@
           </div>
           <div class="col-9">
             <p class="text-right contact-info d-none d-md-block mb-4">
-              01234 567 890 &nbsp;
+              01234 567 890 &nbsp; &nbsp;
               <a href="mailto:hello@dashsoftware.co.uk">
                 hello@dashsoftware.co.uk
               </a>
@@ -129,15 +129,17 @@
         <p class="mt-3">
           Choose the best plan to fit your team’s needs. Get started for free.
         </p>
-        <div class="row m-0 mt-5 pricing-plans">
+        <div class="row m-0 mt-5 pricing-plans gy-4">
           <div class="col-12 col-sm-6 col-lg-3">
             <div>
               <h3>Trading</h3>
               <p class="price">Free*</p>
-              <p class="description mt-5" style="height: 94px;">
+              <p class="description mb-2 mt-5" style="height: 94px;">
                 Best for start ups
               </p>
-              <button class="primary-button mt-lg-5 mt-xl-0">
+              <button
+                class="primary-button mt-lg-5" id="trading-card-button"
+              >
                 Sign up today
               </button>
               <div class="feature-list mt-4">
@@ -167,7 +169,7 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="position-relative most-popular-plan-card">
               <div class="most-popular-label" style="font-weight: 300;">
-                <p>MOST POPULAR</p>
+                <p class="popular-pricing-label">MOST POPULAR</p>
               </div>
               <h3>Contractor</h3>
               <p class="price">
@@ -175,11 +177,13 @@
                 <br />
                 <span style="font-weight: lighter;">per engineer</span>
               </p>
-              <p class="description" style="height: 94px;">
+              <p class="description mb-2" style="height: 94px;">
                 Scale your business, increase productivity, and keep your teams
                 connected
               </p>
-              <button class="primary-button mt-lg-5 mt-xl-0">
+              <button
+                class="primary-button mt-lg-5 mt-xl-0" id="contractor-signup-btn"
+              >
                 Sign up today
               </button>
               <div class="feature-list mt-4">
@@ -222,11 +226,13 @@
                 <br />
                 <span style="font-weight: lighter;">per engineer</span>
               </p>
-              <p class="description" style="height: 94px;">
+              <p class="description mb-2" style="height: 94px;">
                 Optimise your team’s workflow and get your clients fully on
                 board
               </p>
-              <button class="primary-button mt-lg-5 mt-xl-0">
+              <button
+                class="primary-button mt-lg-5" id="client-card-button"
+              >
                 Sign up today
               </button>
               <div class="feature-list mt-4">
@@ -277,18 +283,18 @@
             <div>
               <h3>Enterprise</h3>
               <p class="price">POA</p>
-              <p class="description mt-5" style="height: 94px;">
+              <p class="description mb-2 mt-5" style="height: 94px;">
                 We will tailor the package to your unique needs and business
                 processes
               </p>
-              <button class="primary-button mt-lg-5 mt-xl-0">
+              <button class="primary-button mt-lg-5 mt-xl-0" id="enterprise-signup-btn">
                 Sign up today
               </button>
               <p class="mt-4">Pricing available upon request</p>
             </div>
           </div>
         </div>
-        <p class="text-center mt-5">
+        <p class="text-center mt-5" style="font-size: 15px;">
           *Tracking £5.00 per user as an addtional bolt on.
         </p>
       </div>
@@ -297,7 +303,7 @@
           To see how much you can save, try our
           <span
             class="text-decoration-underline"
-            style="text-underline-offset: 0.5rem; color: #fdfdfd;"
+            style="text-underline-offset: 0.6rem; color: #fdfdfd;"
           >
             Savings Calculator
           </span>
@@ -374,12 +380,12 @@
               <img
                 src="./assets/Images/app-store-badge.png"
                 alt=""
-                width="101px"
+                width="146px"
               />
               <img
-                src="./assets/Images/google-play-badge.png"
+                src="./assets/Images/play-store-badge.svg"
                 alt=""
-                width="115px"
+                width="162px"
               />
             </div>
           </div>
