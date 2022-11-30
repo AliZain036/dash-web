@@ -94,8 +94,8 @@ ul li {
   position: relative;
 }
 
-.features-section > div > div > div:nth-child(2) {
-  /* margin-top: 2rem; */
+.features-screen div div img {
+  height: 104px;
 }
 
 .features-section div div h3 {
