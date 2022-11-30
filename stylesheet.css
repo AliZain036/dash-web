@@ -19,7 +19,8 @@ img {
 }
 
 .hero-section,
-.hero-section-benefits, .features-hero-section {
+.hero-section-benefits,
+.features-hero-section {
   /* height: 100vh; */
   background-image: linear-gradient(
       to top,
@@ -38,7 +39,8 @@ ul li {
   font-size: 26px;
 }
 
-.hero-section-benefits, .features-hero-section {
+.hero-section-benefits,
+.features-hero-section {
   /* background-image: url(./assets/Images/macbook_air_mockup.jpg); */
   background-image: linear-gradient(
       to bottom,
@@ -47,8 +49,8 @@ ul li {
       transparent 50%
     ),
     url(./assets/Images/macbook_air_mockup.jpg);
-    height: 50vh;
-    background-position: inherit;
+  height: 50vh;
+  background-position: inherit;
 }
 
 .hero-section-card {
@@ -212,7 +214,8 @@ ul li button {
 .popular-pricing-label {
   font-size: 21px;
   font-weight: 300;
-  box-shadow: rgb(0 0 0 / 15%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 10px 36px 0px,
+    rgb(0 0 0 / 6%) 0px 0px 0px 1px;
 }
 
 .pricing-plans .price {
@@ -287,6 +290,49 @@ ul li button {
 
 .text-section {
   color: #fff;
+}
+
+.demo-text-section {
+  background-color: #676868;
+  padding: 2rem 0 2rem 3rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.book-demo-image-section {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .demo-text-section {
+    padding: 2rem 1rem 2rem 3rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+
+  .book-demo-image-section {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    height: 310px;
+  }
+
+  #book-free-demo {
+    height: 645px;
+  }
+
+  .book-demo-image-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(103, 104, 104, 1),
+        rgba(0, 255, 0, 0) 36%,
+        transparent 50%
+      ),
+      url('./assets/Images/macbook_air_mockup.jpg');
+  }
 }
 
 @media screen and (min-width: 901px) {
@@ -383,23 +429,27 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  #client-card-button, #trading-card-button {
-    margin-top: .3rem !important;
+  #client-card-button,
+  #trading-card-button {
+    margin-top: 0.3rem !important;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #client-card-button, #trading-card-button {
-    margin-top: .5rem !important;
+  #client-card-button,
+  #trading-card-button {
+    margin-top: 0.5rem !important;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  #client-card-button, #trading-card-button {
+  #client-card-button,
+  #trading-card-button {
     margin-top: 4rem !important;
   }
 
-  #enterprise-signup-btn, #contractor-signup-btn {
+  #enterprise-signup-btn,
+  #contractor-signup-btn {
     margin-top: 3.7rem !important;
   }
 }
