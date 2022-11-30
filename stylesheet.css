@@ -112,7 +112,7 @@ ul li {
 
 .book-free-demo-section {
   border-radius: 20px;
-  height: 375px;
+  /* height: 375px; */
 }
 
 .book-demo-image-section {
@@ -321,7 +321,7 @@ ul li button {
   }
 
   #book-free-demo {
-    height: 645px;
+    height: 1120px;
   }
 
   .book-demo-image-section {
@@ -334,6 +334,13 @@ ul li button {
       url('./assets/Images/macbook_air_mockup.jpg');
   }
 }
+
+@media screen and (max-width: 442px) {
+  #book-free-demo {
+    height: 1137px;
+  }
+}
+
 
 @media screen and (min-width: 901px) {
   ul li {
